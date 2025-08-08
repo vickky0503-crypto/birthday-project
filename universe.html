@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>จักรวาลของโบว์</title>
+  <link href="style.css" rel="stylesheet"/>
+  <script src="script.js" defer></script>
+</head>
+<body onload="playMusic('music/space.mp3'); initPhotoUniverse();">
+<canvas id="starCanvas"></canvas>
+
+<div class="header container">
+  <a href="index.html">∞ Infinite White</a>
+  <button id="muteBtn" class="mute" onclick="toggleMute()">ปิดเสียง</button>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h2 style="text-align:center">จักรวาลของโบว์</h2>
+    <p class="small" style="text-align:center">แตะ/คลิกที่ดาวเพื่อดูรูปใหญ่ </p>
+    <div id="universeField" class="universe-field"></div>
+    <div class="controls" style="justify-content:center">
+      <a class="btn" href="ending.html">ไปหน้าสุดท้าย</a>
+    </div>
+  </div>
+</div>
+<div id="imageModal" onclick="closeImage()">
+  <img id="modalImage" alt="photo">
+</div>
+</body>
+</html>
