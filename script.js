@@ -80,7 +80,7 @@ function imageExists(url) {
   });
 }
 
-async function resolveImagePath(dir, index, exts = ['jpg','jpeg','png','webp']) {
+async function resolveImagePath(dir, index, exts = ['jpg','JPG','jpeg','png','webp']) {
   for (const ext of exts) {
     const candidate = `${dir}/${index}.${ext}`;
     if (await imageExists(candidate)) return candidate;
